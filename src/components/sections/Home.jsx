@@ -25,7 +25,7 @@ export const Home = () => {
               View Projects
             </a>
             <a
-              href="rakesh-portfolio/resume/Rakesh_resume.pdf?v=1"
+              href="rakesh-portfolio/public/Rakesh_resume.pdf"
               download="Rakesh_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
