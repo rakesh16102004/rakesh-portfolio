@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import projectImage from '../../assets/play_store.png';
 
 export const Projects = () => {
   return (
@@ -15,43 +16,47 @@ export const Projects = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div
               className="
-              glass p-6 rounded-xl border border-white/10 
+              glass  rounded-xl border border-white/10 
               hover:-translate-y-1 hover:border-blue-500/30
               hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
               transition-all
             "
             >
-              <h3 className="text-xl font-bold mb-2">Real-Time Chat App</h3>
-              <p className="text-gray-400 mb-4">
-                Scalable chat platform supporting real-time messaging, presence,
-                and group chat features.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["Socket.IO", "Express", "React", "Redis"].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="
-                      bg-blue-500/10 text-blue-500 py-1 px-3 
-                      rounded-full text-sm
-                      transition
-                      hover:bg-blue-500/20 hover:-translate-y-0.5
-                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
-                    "
-                  >
-                    {tech}
-                  </span>
-                ))}
+              <div><img src={projectImage} alt="project" className="p-0 mb-4 rounded-t-xl "/></div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Google Playstore Data Analytics</h3>
+                <p className="text-gray-400 mb-4">
+                Analyzed app data (ratings, reviews, downloads) to identify trends and user preferences.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {["Python", "Plotly", "Tkinter"].map((tech, key) => (
+                    <span
+                      key={key}
+                      className="
+                        bg-blue-500/10 text-blue-500 py-1 px-3 
+                        rounded-full text-sm
+                        transition
+                        hover:bg-blue-500/20 hover:-translate-y-0.5
+                        hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
+                      "
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                  <div className="flex justify-between items-center ">
+                    <a
+                      href="https://github.com/rakesh16102004/google-playstore-analytics-internship"
+                      className="text-blue-400 hover:text-blue-300 transition-colors my-4" 
+                      target="_blank"
+                    >
+                      View Project →
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div className="flex justify-between items-center ">
-                <a
-                  href="#"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View Project →
-                </a>
-              </div>
-            </div>
           </div>
+
         </div>
       </RevealOnScroll>
     </section>

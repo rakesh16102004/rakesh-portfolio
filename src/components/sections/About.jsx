@@ -6,11 +6,10 @@ export const About = () => {
     "CSS",
     "JavaScript",
     "React",
-    "TypeScript",
     "TailwindCSS"
   ];
 
-  const backendSkills = ["Node.js", "Express.js", "MongoDB", "GraphQL"];
+  const backendSkills = ["Node.js", "Express.js", "MongoDB"];
 
   return (
     <section
@@ -79,6 +78,9 @@ export const About = () => {
                   <strong> B.e. in Computer Science Engineering (Artificial Intelligence & Machine Learning) </strong> - Rajalakshmi institute of technology
                   (2022-2026)
                 </li>
+                <li>
+                  <strong>7.44 CGPA</strong>
+                </li>
               </ul>
             </div>
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
@@ -91,9 +93,19 @@ export const About = () => {
                     Web Development Intern at NullClass (Sep 2024 - Oct 2024){" "}
                   </h4>
                   <p>
-                    Developed a Full stack web application using MERN stack
+                    Developed and optimized full-stack web applications using <strong>MongoDB, Express.js, React.js, and Node.js</strong>.
                   </p>
                 </div>
+                <div>
+                  <h4 className="font-semibold">
+                    {" "}
+                    Data Analyst Intern at NullClass (Dec 2024 - Jan 2025){" "}
+                  </h4>
+                  <p>
+                    Analyzed large datasets to <strong>identify key trends</strong> and <strong>patterns</strong>, providing actionable insights to improve
+operational processes.
+                  </p>
+                </div>  
               </div>
             </div>
           </div>
